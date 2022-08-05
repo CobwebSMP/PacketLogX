@@ -18,11 +18,11 @@ class Main extends PluginBase implements Listener{
        }
 
        public function onSend(DataPacketSendEvent $event){
-		   foreach($event->getPackets() as $packet){
+		foreach($event->getPackets() as $packet){
 				$p = $packet->getName();
-			}
-			file_put_contents($this->getDataFolder()."\log.log", "[".date('H:i:s') ."] S server==>client " .$p. "\n", FILE_APPEND);
-			echo Terminal::$COLOR_AQUA."[".date('H:i:s') ."] ".Terminal::$COLOR_GREEN."server==>client " .Terminal::$COLOR_WHITE. $p. "\n";
+		}
+		file_put_contents($this->getDataFolder()."\log.log", "[".date('H:i:s') ."] S server==>client " .$p. "\n", FILE_APPEND);
+		echo Terminal::$COLOR_AQUA."[".date('H:i:s') ."] ".Terminal::$COLOR_GREEN."server==>client " .Terminal::$COLOR_WHITE. $p. "\n";
        }
 
        public function onReceive(DataPacketReceiveEvent $event){
