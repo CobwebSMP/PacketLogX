@@ -1,7 +1,6 @@
 # PacketLogX
 Packet logging plugin for PocketMine-MP<br>
 ## How to use<br>
-Download latest release of the plugin and put it in the server plugin folder.<br>
 v1.0.0 for PocketMine-MP 3.x.x<br>
 v2.0.0 for PocketMine-MP 4.x.x<br>
 v3.0.0 for PocketMine-MP 5.x.x<br>
